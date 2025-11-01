@@ -1,0 +1,669 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>MyE-Portfolio</title>
+        <meta content="width=device-width, initial-scale=1.0" name="viewport">
+        <meta content="Portfolio HTML Template" name="keywords">
+        <meta content="Portfolio HTML Template" name="description">
+
+        <!-- Favicon -->
+        <link href="img/favicon.ico" rel="icon">
+
+        <!-- Google Fonts -->
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400|Solway:400,700&display=swap" rel="stylesheet"> 
+
+        <!-- CSS Libraries -->
+        <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet">
+        <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+        <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+        <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet">
+
+        <!-- Template Stylesheet -->
+        <link href="css/style.css" rel="stylesheet">
+    </head>
+<script>
+$(document).ready(function() {
+    // Initialize Isotope
+    var $portfolioContainer = $('.portfolio-container').isotope({
+        itemSelector: '.portfolio-item',
+        layoutMode: 'fitRows'
+    });
+
+    // Filter items on click
+    $('#portfolio-flters li').on('click', function() {
+        $('#portfolio-flters li').removeClass('filter-active');
+        $(this).addClass('filter-active');
+
+        var filterValue = $(this).attr('data-filter');
+        $portfolioContainer.isotope({ filter: filterValue });
+    });
+});
+</script>
+
+    <body>
+        <!-- Header Start -->
+        <div class="top-header" id="top-header">
+            <div class="container text-center">
+                <div class="row">
+                    <div class="col-md-12">
+                        <img src="img/mimi_picture.jpg" alt="Maryam" />
+                    </div>
+
+                    <div class="col-md-12">
+                        <h1>Maryam Aslam</h1>
+                    </div>
+
+                    <div class="col-md-12">
+                        <p>PhD in Educational Technology</p>
+                        <h2></h2>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Header End -->
+
+        <!-- Nav Start -->
+        <div class="header">
+            <div class="container">
+
+                <div class="logo pull-left">
+                    <h1><a href="index.html">MyE-Portfolio</a></h1>
+                </div>
+
+                <nav id="nav-menu-container">
+                    <ul class="nav-menu">
+                        <li><a href="#top-header">Home</a></li>
+                        <li><a href="#about">About me</a></li>
+                        <li><a href="#experience">Experience</a></li>
+                        <li><a href="#services">Research Projects</a></li>
+                        <li><a href="#portfolio">Portfolio</a></li>
+                        <li><a href="#contact">Contact me</a></li>
+                    </ul>
+                </nav>
+
+                <nav class="nav social-nav pull-right d-none d-lg-inline">
+                    <a href="#"><i class="fa fa-twitter"></i></a> <a href="#"><i class="fa fa-facebook"></i></a> <a href="#"><i class="fa fa-linkedin"></i></a>
+                </nav>
+            </div>
+        </div>
+        <!-- Nav End -->
+
+        <!-- About Me Start-->
+        <div class="about" id="about">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-md-6 col-lg-4">
+                        <img class="img-fluid" src="img/mimi_picture.jpg" />
+                    </div>
+
+                    <div class="col-md-6 col-lg-8">
+                        <header class="section-header">
+                            <h2>About Me</h2>
+                        </header>
+                        <h3><strong>Name:</strong>Maryam Aslam</h3>
+                        <h4><strong>Profession:</strong> Aspiring Instructional Designer</h4>
+                        <p>
+                            My name is Maryam Aslam, and I currently reside in Gainesville, Florida, where I am pursuing my Ph.D. in Educational Technology at the University of Florida. I am passionate about exploring how technology can transform teaching and learning experiences, particularly through the use of game-based assessments, immersive learning environments, and data-driven feedback systems.
+                        </p>
+                        <p>
+                            Before beginning my doctoral studies, I worked as a Lecturer in Computer Science at Bahria University, where I taught courses across computing and technology disciplines. My teaching experiences deeply shaped my interest in developing innovative ways to make complex technical subjects more engaging and accessible for students.
+                        </p>
+                        <p>
+                            Through my current research, I aim to design and evaluate educational technologies that foster active learning, creativity, and self-regulated learning among students. My goal is to bridge the gap between technical innovation and pedagogical practice, ensuring that educational tools genuinely enhance student understanding and motivation.
+                        </p>
+                        <a href="#">Hire Me</a>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="skills">
+                            <h3>Front End Skills</h3>
+                            <div class="skill-name">
+                                <p>HTML</p><p>85%</p>
+                            </div>
+                            <div class="progress">
+                                <div class="progress-bar" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                            
+                            <div class="skill-name">
+                                <p>CSS</p><p>95%</p>
+                            </div>
+                            <div class="progress">
+                                <div class="progress-bar" role="progressbar" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                            
+                            <div class="skill-name">
+                                <p>javascript</p><p>80%</p>
+                            </div>
+                            <div class="progress">
+                                <div class="progress-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="skills">
+                            <h3>Back End Skills</h3>
+                            <div class="skill-name">
+                                <p>Android Development</p><p>90%</p>
+                            </div>
+                            <div class="progress">
+                                <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                            
+                            <div class="skill-name">
+                                <p>Unity 3D</p><p>85%</p>
+                            </div>
+                            <div class="progress">
+                                <div class="progress-bar" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                            
+                            <div class="skill-name">
+                                <p>MySQL</p><p>95%</p>
+                            </div>
+                            <div class="progress">
+                                <div class="progress-bar" role="progressbar" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- About Me End-->
+        
+        <!-- Job Experience Start -->
+        <div class="experience" id="experience">
+            <div class="container">
+                <header class="section-header">
+                    <h3>Job Experience</h3>
+                </header>
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="exp-column">
+                             <p class="exp-date">01-Jan-2023 <span>to</span> Present</p>
+                                <h4 class="exp-company">Bahria University, Islamabad, Pakistan</h4>
+                                <h4 class="exp-designation">Senior Lecturer – Department of Computer Science</h4>
+                                <p class="exp-detail">
+                                    Teaching core computer science courses including Data Structures, Object-Oriented Programming, and Python. 
+                                    Implementing Outcome-Based Education (OBE) across CS, IT, and AI programs. Mentoring students with low GPAs, 
+                                    providing academic and career guidance, and integrating emotional intelligence training into computing education. 
+                                    Supporting new faculty in CLO/PLO alignment and OBE framework implementation.
+                                </p>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="exp-column">
+                            <p class="exp-date">01-Jul-2017 <span>to</span> 31-Dec-2022</p>
+                            <h4 class="exp-company">Bahria University, Islamabad, Pakistan</h4>
+                            <h4 class="exp-designation">Senior Lab Engineer – Department of Computer Science</h4>
+                            <p class="exp-detail" style="text-align: justify;">
+                                Delivered interactive lectures, lab sessions, and online learning modules using LMS platforms. 
+                                Collaborated on course design, assessments, and outcome mapping. Provided feedback on student programming work 
+                                and assisted in developing innovative teaching methods and learning materials. 
+                                Maintained and managed computing labs, ensuring reliable hardware and software environments for instruction.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="exp-column">
+                            <p class="exp-date">01-Jan-2016 <span>to</span> 30-Jun-2017</p>
+                            <h4 class="exp-company">Bahria University, Islamabad, Pakistan</h4>
+                            <h4 class="exp-designation">Research Assistant</h4>
+                            <p class="exp-detail">
+                                Assisted in AI and data analysis projects using TensorFlow and PyTorch. Conducted literature reviews, 
+                                prepared research reports, and presented findings at academic meetings. Supported graduate students in 
+                                manuscript preparation and contributed to project coordination and milestone tracking.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="exp-column">
+                             <p class="exp-date">01-Aug-2014 <span>to</span> 31-Dec-2015</p>
+                                <h4 class="exp-company">Allied School, Rawalpindi, Pakistan</h4>
+                                <h4 class="exp-designation">Computer Science Teacher</h4>
+                                <p class="exp-detail">
+                                    Taught computer science subjects to students from grades 1–8. Developed lesson plans and hands-on activities 
+                                    to improve digital literacy and computational thinking. Integrated educational technology into the classroom 
+                                    to promote interactive learning and student engagement.
+                                </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Job Experience End -->
+
+        <!-- Services Start -->
+        <div class="services" id="services">
+            <div class="container">
+                <header class="section-header">
+                    <h3>Research Projects</h3>
+                    <p>
+                        My research focuses on designing and evaluating educational technologies that enhance student learning and engagement. I am particularly interested in game-based assessment, immersive learning environments, and adaptive systems that provide real-time feedback to support creativity, self-regulation, and problem-solving skills in STEM education.
+                    </p>
+                </header>
+                <div class="row">
+                    <div class="col-sm-6 col-md-4">
+                        <div class="single-service">
+                            <span></span>
+                            <div class="service-icon"><i class="fa fa-television"></i></div>
+                            <h4><a href="#">Adaptive Learning System for Technical Courses</a></h4>
+                            <p class="exp-date">2023 <span>to</span> Present</p>
+                            <h4 class="exp-company">Bahria University, Islamabad, Pakistan</h4>
+                            <p class="exp-detail">
+                                Developed a machine learning-driven platform that personalizes educational content for students in 
+                                technical courses. The system dynamically adjusts material difficulty based on student performance data 
+                                using collaborative filtering and reinforcement learning algorithms. Achieved 85% accuracy in predicting 
+                                student proficiency, improving engagement by 25% and overall course grades by 15%.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-md-4">
+                        <div class="single-service">
+                            <span></span>
+                            <div class="service-icon"> <i class="fa fa-laptop"></i> </div>
+                            <h4><a href="#">Sign Language to Spoken English Translation System</a></h4>
+                            <p class="exp-date">2022 <span>to</span> 2023</p>
+                            <h4 class="exp-company">Bahria University, Islamabad, Pakistan</h4>
+                            <p class="exp-detail">
+                                Designed a real-time translation system using computer vision and deep learning techniques to convert 
+                                sign language gestures into spoken English. Integrated CNNs and RNNs for gesture classification and 
+                                achieved an accuracy rate of approximately 85%, enhancing accessibility and communication for 
+                                sign language users.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-md-4">
+                        <div class="single-service">
+                            <span></span>
+                            <div class="service-icon"> <i class="fa fa-android"></i> </div>
+                            <h4><a href="#">Social Media-Based Depression Detection System</a></h4>
+                           <p class="exp-date">2021 <span>to</span> 2022</p>
+                            <h4 class="exp-company">Bahria University, Islamabad, Pakistan</h4>
+                            <p class="exp-detail">
+                                Created a Natural Language Processing (NLP) and AI-based system to detect signs of depression 
+                                in social media content. Utilized SVM, LSTM, and Word2Vec models for sentiment analysis, achieving 
+                                82.3% accuracy. The system offers valuable insights for early mental health detection and intervention.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-md-4">
+                        <div class="single-service">
+                            <span></span>
+                            <div class="service-icon"> <i class="fa fa-envelope-o"></i> </div>
+                            <h4><a href="#">Intelligent Tutoring System for Programming Languages</a></h4>
+                           <p class="exp-date">2020 <span>to</span> 2021</p>
+                            <h4 class="exp-company">Bahria University, Islamabad, Pakistan</h4>
+                            <p class="exp-detail">
+                                Developed an AI-powered tutoring system using NLP models like GPT and BERT, reinforcement learning, 
+                                and GANs to provide real-time formative feedback for programming students. The system adapts to 
+                                individual learning patterns, offering tailored practice problems and explanations to improve 
+                                mastery and motivation.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-md-4">
+                        <div class="single-service">
+                            <span></span>
+                            <div class="service-icon"> <i class="fa fa-signal"></i> </div>
+                            <h4><a href="#">Interactive Learning Enhancement through Gamified Tools</a></h4>
+                             <p class="exp-date">2019 <span>to</span> 2020</p>
+                                <h4 class="exp-company">Bahria University, Islamabad, Pakistan</h4>
+                                <p class="exp-detail">
+                                    Designed a gamified educational platform incorporating leaderboards, challenges, and rewards to 
+                                    increase student engagement. Tested across technical courses, the system demonstrated a 30% boost 
+                                    in engagement and a 20% improvement in completion rates, verified through A/B testing.
+                                </p>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-md-4">
+                        <div class="single-service">
+                            <span></span>
+                            <div class="service-icon"> <i class="fa fa-globe"></i> </div>
+                            <h4><a href="#">Adaptive Learning System for Technical Courses</a></h4>
+                            <p class="exp-date">2023 <span>to</span> Present</p>
+                            <h4 class="exp-company">Bahria University, Islamabad, Pakistan</h4>
+                            <p class="exp-detail">
+                                Developed a machine learning-driven platform that personalizes educational content for students in 
+                                technical courses. The system dynamically adjusts material difficulty based on student performance data 
+                                using collaborative filtering and reinforcement learning algorithms. Achieved 85% accuracy in predicting 
+                                student proficiency, improving engagement by 25% and overall course grades by 15%.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Services End -->
+
+        <!-- Counter Start -->
+        <div class="counters">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-3 col-sm-6">
+                        <div class="counter">
+                            <div class="counter-icon-box"><i class="fa fa-calendar"></i></div>
+                            <div class="number animateNumber" data-toggle="counter-up"> <span>8</span></div>
+                            <h4 class="font-weight">Years of Experience</h4>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-6">
+                        <div class="counter">
+                            <div class="counter-icon-box"><i class="fa fa-check"></i></div>
+                            <div class="number animateNumber" data-toggle="counter-up"> <span>15</span></div>
+                            <h4 class="font-weight">Completed Projects</h4>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-6">
+                        <div class="counter">
+                            <div class="counter-icon-box"><i class="fa fa-users"></i></div>
+                            <div class="number animateNumber" data-toggle="counter-up"> <span>400</span></div>
+                            <h4 class="font-weight">Total Students</h4>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-6">
+                        <div class="counter">
+                            <div class="counter-icon-box"><i class="fa fa-heart"></i></div>
+                            <div class="number animateNumber" data-toggle="counter-up"> <span>9</span></div>
+                            <h4 class="font-weight">Award Won</h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Counter End -->
+
+        <!-- Portfolio Start -->
+        <div class="portfolio" id="portfolio">
+            <div class="container">
+                <header class="section-header">
+                    <h3 class="section-title">My Graduate Projects</h3>
+                    <p>
+                        Please view my current and previous projects.
+                    </p>
+                </header>
+
+                <div class="row">
+                    <div class="col-lg-12">
+                      <ul id="portfolio-flters">
+                            <li data-filter="*" class="filter-active">All</li>
+                            <li data-filter=".book-cover">Book Cover</li>
+                            <li data-filter=".logo-designing">Logo Designing</li>
+                            <li data-filter=".quiz-designing">Quiz Designing</li>
+                            <li data-filter=".drag-drop">Drag and Drop Game</li>
+                            <li data-filter=".image-editing">Educational Image Editing</li>
+                            <li data-filter=".video-editing">Educational Video Editing</li>
+                        </ul>
+
+                    </div>
+                </div>
+
+                <div class="row portfolio-container">
+                  <div class="col-lg-4 col-md-6 portfolio-item book-cover">
+                   <div class="portfolio-wrap">
+                        <figure>
+                            <img src="img/portfolio-1.jpg" class="img-fluid" alt="Book Cover">
+
+                            <!-- Eye icon: still opens image preview -->
+                            <a href="img/portfolio-1.jpg" 
+                               data-lightbox="portfolio" 
+                               data-title="Book Cover" 
+                               class="link-preview" 
+                               title="Preview">
+                               <i class="fa fa-eye"></i>
+                            </a>
+
+                            <!-- Link icon: opens your new internal page -->
+                            <a href="bookcover.html" 
+                               class="link-details" 
+                               title="View Project Details">
+                               <i class="fa fa-link"></i>
+                            </a>
+
+                            <h4 class="portfolio-title">
+                                Book Cover <span>Book Design</span>
+                            </h4>
+                        </figure>
+                    </div>
+
+                </div>
+                   <div class="col-lg-4 col-md-6 portfolio-item logo-designing">
+                    <div class="portfolio-wrap">
+                        <figure>
+                            <img src="img/portfolio-2.jpg" class="img-fluid" alt="Logo Designing">
+
+                            <!-- Eye icon: preview image in lightbox -->
+                            <a href="img/portfolio-2.jpg" 
+                               class="link-preview" 
+                               data-lightbox="portfolio" 
+                               data-title="Logo Designing" 
+                               title="Preview">
+                               <i class="fa fa-eye"></i>
+                            </a>
+
+                            <!-- Link icon: opens internal project details page -->
+                            <a href="project-logo.html" 
+                               class="link-details" 
+                               title="View Project Details">
+                               <i class="fa fa-link"></i>
+                            </a>
+
+                            <h4 class="portfolio-title">Logo Designing <span>Logo Designing</span></h4>
+                        </figure>
+                    </div>
+                </div>
+
+
+                  <div class="col-lg-4 col-md-6 portfolio-item quiz-designing">
+                    <div class="portfolio-wrap">
+                        <figure>
+                            <img src="img/portfolio-3.jpg" class="img-fluid" alt="Quiz Designing">
+
+                            <!-- Eye icon: image preview -->
+                            <a href="img/portfolio-3.jpg" 
+                               class="link-preview" 
+                               data-lightbox="portfolio" 
+                               data-title="Quiz Designing" 
+                               title="Preview">
+                               <i class="fa fa-eye"></i>
+                            </a>
+
+                            <!-- Link icon: opens GitHub project -->
+                            <a href="https://maryamaslam10.github.io/website/" 
+                               target="_blank" 
+                               class="link-details" 
+                               title="View Project on GitHub">
+                               <i class="fa fa-link"></i>
+                            </a>
+
+                            <h4 class="portfolio-title">
+                                Quiz Designing <span>Quiz Designing</span>
+                            </h4>
+                        </figure>
+                    </div>
+                </div>
+
+
+                 <div class="col-lg-4 col-md-6 portfolio-item drag-drop">
+                    <div class="portfolio-wrap">
+                        <figure>
+                            <img src="img/portfolio-4.jpg" class="img-fluid" alt="Drag and Drop Game">
+
+                            <!-- Eye icon: opens image preview -->
+                            <a href="img/portfolio-4.jpg" 
+                               class="link-preview" 
+                               data-lightbox="portfolio" 
+                               data-title="Drag and Drop Game" 
+                               title="Preview">
+                               <i class="fa fa-eye"></i>
+                            </a>
+
+                            <!-- Link icon: opens GitHub project -->
+                            <a href="https://maryamaslam10.github.io/Draganddropgame/" 
+                               target="_blank" 
+                               class="link-details" 
+                               title="View Game on GitHub">
+                               <i class="fa fa-link"></i>
+                            </a>
+
+                            <h4 class="portfolio-title">
+                                Drag and Drop Game <span>Drag and Drop Game</span>
+                            </h4>
+                        </figure>
+                    </div>
+                </div>
+
+                    <div class="col-lg-4 col-md-6 portfolio-item image-editing">
+                        <div class="portfolio-wrap">
+                            <figure>
+                                <img src="img/portfolio-5.jpg" class="img-fluid" alt="">
+                                <a href="img/portfolio-5.jpg" class="link-preview" data-lightbox="portfolio" data-title="Interdum et malesuada" title="Preview"><i class="fa fa-eye"></i></a>
+                                <a href="#" class="link-details" title="More Details"><i class="fa fa-link"></i></a>
+                                <h4 class="portfolio-title">Educational Image Editing <span>Educational Image Editing</span></h4>
+                            </figure>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-md-6 portfolio-item video-editing">
+                        <div class="portfolio-wrap">
+                            <figure>
+                                <img src="img/portfolio-6.jpg" class="img-fluid" alt="">
+                                <a href="img/portfolio-6.jpg" class="link-preview" data-lightbox="portfolio" data-title="Pellentesque lacus" title="Preview"><i class="fa fa-eye"></i></a>
+                                <a href="#" class="link-details" title="More Details"><i class="fa fa-link"></i></a>
+                                <h4 class="portfolio-title">Educational Video Editing<span>Educational Video Editing</span></h4>
+                            </figure>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Portfolio End -->
+
+        <!-- Testimonials Start -->
+        <div class="testimonials" id="testimonials">
+            <div class="container">
+                <i class="fa fa-4x fa-quote-left"></i>
+                <div class="owl-carousel testimonials-carousel">
+                   <div class="testimonial-item">
+                        <img src="img/ufl.jpg" class="testimonial-img" alt="University of Florida">
+                        <h3><a href="https://www.ufl.edu/" target="_blank" style="color: #2b6cb0; text-decoration: none;">University of Florida</a></h3>
+                        <h4>Gainesville, Florida</h4>
+                        <p>
+                            The University of Florida is a leading public research institution committed to excellence in education, innovation, and global impact. 
+                            As one of the top universities in the United States, UF fosters creativity, diversity, and discovery across disciplines.
+                        </p>
+                    </div>
+
+
+                   <div class="testimonial-item">
+                        <img src="img/coed.jpg" class="testimonial-img" alt="UF College of Education">
+                        <h3><a href="https://education.ufl.edu/" target="_blank" style="color: #2b6cb0; text-decoration: none;">UF College of Education</a></h3>
+                        <h4>Gainesville, Florida</h4>
+                        <p>
+                            The UF College of Education is a nationally recognized leader in advancing research and practice in teaching, learning, and educational innovation. 
+                            Through its commitment to equity, technology integration, and transformative learning, the college prepares educators and researchers to shape the future of education worldwide.
+                        </p>
+                    </div>
+
+
+                    <div class="testimonial-item">
+                        <img src="img/stemlab.PNG" class="testimonial-img" alt="UF STEM Class Lab">
+                        <h3><a href="https://ialt.education.ufl.edu/labs/" target="_blank" style="color: #2b6cb0; text-decoration: none;">UF STEM Class Lab</a></h3>
+                        <h4>University of Florida, College of Education</h4>
+                        <p>
+                            The UF STEM Class Lab is an innovative learning environment where technology, creativity, and inquiry-based teaching converge. 
+                            Designed to promote hands-on exploration, the lab empowers future educators and researchers to design, test, and refine educational tools 
+                            that inspire curiosity and foster deep understanding in science, technology, engineering, and mathematics.
+                        </p>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <!-- Testimonials End -->
+
+        <!-- Contact Start -->
+        <div class="contact" id="contact">
+            <div class="container">
+                <div class="section-header">
+                    <h3>Contact Me</h3>
+                    <p>
+                        I would love to connect with fellow educators, researchers, and creators who share a passion for learning and innovation. Feel free to reach out for collaborations, ideas, or meaningful conversations in the field of Educational Technology.
+                    </p>
+                </div>
+
+                <div class="row align-items-center">
+                    <div class="col-md-6">
+                        <div class="contact-info">
+                            <p><i class="fa fa-user"></i>Maryam Aslam</p>
+                            <p><i class="fa fa-tag"></i>PhD Graduate Student</p>
+                            <p><i class="fa fa-map-marker"></i>University of Florida, Gainesville, FL, USA</p>
+                            <p><i class="fa fa-envelope"></i><a href="mailto:info@example.com">m.aslam@ufl.edu</a></p>
+                            <p><i class="fa fa-phone"></i><a href="tel:+1234567890">+00-000-000</a></p>
+                            <div class="social">
+                                <a href=""><i class="fa fa-twitter"></i></a>
+                                <a href=""><i class="fa fa-facebook"></i></a>
+                                <a href=""><i class="fa fa-linkedin"></i></a>
+                                <a href=""><i class="fa fa-instagram"></i></a>
+                                <a href=""><i class="fa fa-youtube"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="form">
+                            <form action="" method="">
+                                <div class="form-row">
+                                    <div class="form-group col-md-6">
+                                        <input type="text" class="form-control" placeholder="Your Name" />
+                                    </div>
+                                    <div class="form-group col-md-6">
+                                        <input type="email" class="form-control" placeholder="Your Email" />
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <input type="text" class="form-control" placeholder="Subject" />
+                                </div>
+                                <div class="form-group">
+                                    <textarea class="form-control" rows="5" placeholder="Message"></textarea>
+                                </div>
+                                <div><button type="submit">Send Message</button></div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Contact End -->
+
+        <!-- Footer Start -->
+        <div class="footer">
+            <div class="container">
+                <div class="copyright">
+                    <p>&copy; Copyright <a href="">HTML Codex</a>. All Rights Reserved</p>
+                </div>
+            </div>
+        </div>
+        <!-- Footer end -->
+        
+        <!-- Back to Top -->
+        <a href="#" class="back-to-top"><i class="fa fa-chevron-up"></i></a>
+
+        <!-- JavaScript Libraries -->
+        <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
+        <script src="lib/typed/typed.min.js"></script>
+        <script src="lib/easing/easing.min.js"></script>
+        <script src="lib/stickyjs/sticky.js"></script>
+        <script src="lib/superfish/hoverIntent.js"></script>
+        <script src="lib/superfish/superfish.min.js"></script>
+        <script src="lib/waypoints/waypoints.min.js"></script>
+        <script src="lib/counterup/counterup.min.js"></script>
+        <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+        <script src="lib/isotope/isotope.pkgd.min.js"></script>
+        <script src="lib/lightbox/js/lightbox.min.js"></script>
+
+        <!-- Template Javascript -->
+        <script src="js/main.js"></script>
+    </body>
+</html>

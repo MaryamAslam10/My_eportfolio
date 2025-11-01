@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Book Cover Project | From Chapters to Chances</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+
+    <style>
+        body {
+            background-color:#fffaf3;
+            font-family:'Open Sans', sans-serif;
+            overflow-x:hidden;
+        }
+
+        @keyframes gradientShift {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
+        }
+
+        @keyframes glowText {
+            from { text-shadow: 0 0 5px #ffcc80, 0 0 10px #ffe0b2; }
+            to { text-shadow: 0 0 20px #ffb74d, 0 0 30px #ff8a65; }
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        .fade-in { animation: fadeIn 1.5s ease-out; }
+
+        /* 🍂 Leaf styling */
+        .leaf {
+            position: fixed;
+            top: -100px;
+            z-index: 999;
+            color: #e65100;
+            font-size: 24px;
+            opacity: 0.8;
+            animation: fall linear infinite;
+            display: none; /* hidden initially */
+        }
+
+        @keyframes fall {
+            0% { transform: translateY(0) rotate(0deg); opacity: 1; }
+            100% { transform: translateY(120vh) rotate(360deg); opacity: 0.7; }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- 🍂 Banner Section -->
+    <div style="
+        background: linear-gradient(120deg, #ffcc80, #ffe0b2, #ffb74d, #ffcc80);
+        background-size: 200% 200%;
+        animation: gradientShift 10s ease infinite;
+        padding: 60px 20px;
+        text-align: center;
+        border-radius: 0 0 60px 60px;
+        box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+    " class="fade-in">
+        <h1 style="
+            font-family: 'Solway', serif;
+            font-weight: 700;
+            font-size: 42px;
+            color: #4e342e;
+            letter-spacing: 1px;
+            animation: glowText 2s ease-in-out infinite alternate;
+        ">
+            🍁 From Chapters to Chances
+        </h1>
+        <p style="
+            font-size: 18px;
+            color: #5d4037;
+            font-family: 'Open Sans', sans-serif;
+            margin-top: 10px;
+        ">
+            A story of change, courage, and golden moments, where every leaf tells a lesson.
+        </p>
+        <div style="
+            width: 120px;
+            height: 3px;
+            background: linear-gradient(to right, #ef6c00, #ff9800, #ffcc80);
+            margin: 20px auto 0;
+            border-radius: 3px;
+        "></div>
+    </div>
+
+    <!-- 🖼️ Project Image -->
+    <div class="container mt-5 text-center fade-in">
+        <img src="img/FinalBookCover1.png" alt="Book Cover Design" class="img-fluid rounded shadow mb-4" style="max-height:450px; object-fit:contain;">
+        <h2 style="color:#6d4c41; font-weight:700;">Book Cover Design Project</h2>
+        <p class="text-muted mb-5">From the pages that raised me to the chances that shaped me.</p>
+    </div>
+
+    <!-- ✨ Poetic Story -->
+    <div class="container fade-in" id="story-end">
+        <div style="background: linear-gradient(135deg, #fff3e0, #ffe0b2, #fff8e1); padding: 30px; border-radius: 20px; box-shadow: 0 4px 20px rgba(0,0,0,0.1); line-height: 1.9;">
+            
+            <h3 style="color:#bf360c; text-align:center; font-family:'Solway', serif;">📖 Book Cover Story: “From Chapters to Chances”</h3>
+
+            <p style="text-align:justify; font-size:16px; color:#4e342e;">
+                <em>“From Chapters to Chances”</em> tells the story of a girl who grew up surrounded by books and quiet dreams,
+                a girl who spent her childhood learning, teaching, and believing that one day, her life would become something 
+                greater than the pages she once read. That girl is <strong>me</strong>.
+            </p>
+
+            <p style="text-align:justify; font-size:16px; color:#4e342e;">
+                The <strong>library</strong> in the image symbolizes my early years. A space of structure, knowledge, and discipline, 
+                where curiosity was nurtured and every page turned became a small victory of understanding.  
+                It holds the <strong>chapters of my life</strong> written with effort, curiosity, and hope.  
+                From within those familiar walls emerges a <strong>path leading into an autumn forest</strong>, 
+                representing the moment I stepped beyond comfort, chasing the dream of studying abroad. 🍂
+            </p>
+
+            <p style="text-align:justify; font-size:16px; color:#4e342e;">
+                The <strong>girl walking</strong> along that path mirrors my journey, moving forward despite challenges, doubts, and fears.  
+                Every fallen leaf whispers of the struggles faced: the goodbyes, uncertainties, and sacrifices made in the pursuit of growth.  
+                Yet, she keeps walking, drawn by the <strong>golden light ahead</strong> the warm promise of new beginnings. ✨
+            </p>
+
+            <p style="text-align:justify; font-size:16px; color:#4e342e;">
+                Above her, the <strong>girl flying</strong> embodies transformation, the moment when dreams finally take flight.  
+                She represents <strong>freedom, courage, and faith</strong> the part of me that dared to rise above limitations 
+                and explore the world beyond boundaries. 🕊️
+            </p>
+
+            <p style="text-align:justify; font-size:16px; color:#4e342e;">
+                Together, these two figures tell a single story:  
+                <em>the girl who once walked with fear now flies with hope.</em>  
+                This cover is not merely an image, it is a reflection of my own journey, 
+                from the <strong>early chapters of learning</strong> to the <strong>boundless chances I continue to chase.</strong>  
+                It reminds me that <span style="color:#e65100; font-weight:bold;">every ending can become a new beginning</span> 
+                if we have the heart to dream and the courage to follow it. 🍁
+            </p>
+        </div>
+
+        <!-- 🌸 Poetic Ending Line -->
+        <p style="text-align:center; font-style:italic; color:#6d4c41; margin-top:25px;">
+            “Every chapter closed opened a new chance to become who I was meant to be.” 🌾
+        </p>
+
+        <!-- 🔙 Back Button -->
+        <div class="text-center mt-5 fade-in">
+            <a href="index.html#portfolio" class="btn btn-lg btn-outline-warning" style="border-radius:30px; padding:10px 25px; color:#e65100; border-color:#e65100;">
+                <i class="fa fa-arrow-left"></i> Back to Portfolio
+            </a>
+        </div>
+    </div>
+
+    <!-- 🍂 Footer -->
+    <div class="footer text-center mt-5 py-3" style="background-color:#fff3e0; color:#5d4037;">
+        <p>&copy; 2025 Maryam Aslam | From Chapters to Chances | University of Florida</p>
+    </div>
+
+    <!-- 🍁 Falling Leaves appear near end -->
+    <script>
+        const leafColors = ['#ffb74d', '#ef6c00', '#ff9800', '#f57c00', '#d84315'];
+        const leaves = [];
+
+        for(let i=0; i<20; i++){
+            const leaf = document.createElement('div');
+            leaf.classList.add('leaf');
+            leaf.style.left = Math.random() * 100 + 'vw';
+            leaf.style.animationDuration = (6 + Math.random() * 5) + 's';
+            leaf.style.animationDelay = Math.random() * 5 + 's';
+            leaf.style.color = leafColors[Math.floor(Math.random() * leafColors.length)];
+            leaf.innerHTML = '🍂';
+            document.body.appendChild(leaf);
+            leaves.push(leaf);
+        }
+
+        // Show leaves only when the user scrolls to the end
+        window.addEventListener('scroll', () => {
+            const storyEnd = document.getElementById('story-end');
+            const rect = storyEnd.getBoundingClientRect();
+            const triggerPoint = window.innerHeight - 200;
+
+            if (rect.top < triggerPoint) {
+                leaves.forEach(leaf => leaf.style.display = 'block');
+            }
+        });
+    </script>
+
+</body>
+</html>

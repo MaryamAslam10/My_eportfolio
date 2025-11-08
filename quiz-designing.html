@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Quiz Designing | My Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    @keyframes gradientShift {
+      0% { background-position: 0% 50%; }
+      50% { background-position: 100% 50%; }
+      100% { background-position: 0% 50%; }
+    }
+
+    @keyframes glowText {
+      from { text-shadow: 0 0 10px #ffb74d, 0 0 20px #ffcc80; }
+      to { text-shadow: 0 0 20px #ef6c00, 0 0 30px #ff9800; }
+    }
+
+    body {
+      background-color: #fffaf3;
+      font-family: 'Open Sans', sans-serif;
+      overflow-x: hidden;
+    }
+
+    .banner {
+      background: linear-gradient(120deg, #ffe0b2, #ffb74d, #ffcc80, #ffd180);
+      background-size: 200% 200%;
+      animation: gradientShift 10s ease infinite;
+      padding: 60px 20px;
+      text-align: center;
+      border-radius: 0 0 60px 60px;
+      box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+    }
+
+    .banner h1 {
+      font-family: 'Solway', serif;
+      font-weight: 700;
+      font-size: 42px;
+      color: #4e342e;
+      letter-spacing: 1px;
+      animation: glowText 2s ease-in-out infinite alternate;
+    }
+
+    .banner p {
+      font-size: 18px;
+      color: #5d4037;
+      font-family: 'Open Sans', sans-serif;
+      margin-top: 10px;
+    }
+
+    .content {
+      max-width: 900px;
+      margin: 60px auto;
+      padding: 0 20px;
+      font-family: 'Open Sans', sans-serif;
+      color: #4e342e;
+      line-height: 1.8;
+      text-align: justify;
+    }
+
+    .quiz-btn {
+      display: inline-block;
+      margin-top: 30px;
+      background: linear-gradient(to right, #ef6c00, #ff9800, #ffb74d);
+      color: white;
+      padding: 12px 28px;
+      font-size: 18px;
+      border-radius: 30px;
+      text-decoration: none;
+      transition: 0.3s ease;
+    }
+
+    .quiz-btn:hover {
+      background: linear-gradient(to right, #ff9800, #ef6c00);
+      transform: scale(1.05);
+    }
+
+    /* Back button style */
+    .back-btn {
+      display: inline-block;
+      margin-top: 40px;
+      color: #e65100;
+      border: 2px solid #e65100;
+      padding: 10px 25px;
+      border-radius: 30px;
+      text-decoration: none;
+      font-size: 16px;
+      transition: 0.3s;
+    }
+
+    .back-btn:hover {
+      background-color: #e65100;
+      color: white;
+      transform: scale(1.05);
+    }
+
+    .footer {
+      text-align: center;
+      margin-top: 60px;
+      padding: 20px;
+      background-color: #fff3e0;
+      color: #5d4037;
+    }
+  </style>
+</head>
+
+<body>
+  <!-- 🍁 Banner Section -->
+  <div class="banner">
+    <h1>🧩 Quiz Designing</h1>
+    <p>Exploring engagement and learning through interactive design.</p>
+    <div style="width: 120px; height: 3px; background: linear-gradient(to right, #ef6c00, #ff9800, #ffcc80); margin: 20px auto 0; border-radius: 3px;"></div>
+  </div>
+
+  <!-- 🌼 Content Section -->
+  <div class="content">
+    <p>
+      This project represents my exploration into interactive learning environments where quizzes serve not only as assessments but as tools for engagement and reflection.
+      I designed this quiz experience using principles of <strong>game based learning</strong> and <strong>self-regulated learning</strong> to keep learners curious, challenged, and confident.
+    </p>
+
+    <p>
+      Each question integrates cognitive scaffolding and adaptive feedback to help learners monitor their understanding while staying motivated.
+      The goal was to make assessment feel like play encouraging growth, not anxiety.
+    </p>
+
+    <p>
+      This project demonstrates how thoughtfully designed quizzes can turn evaluation into empowerment, especially for underrepresented learners exploring STEM and technology.
+    </p>
+
+    <div style="text-align: center;">
+      <a href="https://maryamaslam10.github.io/website"
+         target="_blank"
+         class="quiz-btn">🎮 Play Quiz</a>
+    </div>
+
+    <!-- 🔙 Back Button -->
+    <div style="text-align: center;">
+      <a href="index.html#portfolio" class="back-btn">
+        <i class="fa fa-arrow-left"></i> Back to Portfolio
+      </a>
+    </div>
+  </div>
+
+  <!-- 🍂 Footer -->
+  <div class="footer">
+    <p>&copy; 2025 Maryam Aslam | Interactive Learning Projects | University of Florida</p>
+  </div>
+</body>
+</html>

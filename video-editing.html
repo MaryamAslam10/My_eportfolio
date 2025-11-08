@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Educational Video Editing | Maryam Aslam</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
+
+  <style>
+    body {
+      background-color: #fffaf3;
+      font-family: 'Open Sans', sans-serif;
+      overflow-x: hidden;
+    }
+
+    @keyframes gradientShift {
+      0% { background-position: 0% 50%; }
+      50% { background-position: 100% 50%; }
+      100% { background-position: 0% 50%; }
+    }
+
+    @keyframes glowText {
+      from { text-shadow: 0 0 5px #ffcc80, 0 0 10px #ffe0b2; }
+      to { text-shadow: 0 0 20px #ffb74d, 0 0 30px #ff8a65; }
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    .fade-in { animation: fadeIn 1.5s ease-out; }
+  </style>
+</head>
+
+<body>
+
+ <!-- 🍁 Banner Section -->
+<div style="
+    background: linear-gradient(120deg, #ffcc80, #ffe0b2, #ffb74d, #ffcc80);
+    background-size: 200% 200%;
+    animation: gradientShift 10s ease infinite;
+    padding: 60px 20px;
+    text-align: center;
+    border-radius: 0 0 60px 60px;
+    box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+" class="fade-in">
+  <h1 style="
+      font-family: 'Solway', serif;
+      font-weight: 700;
+      font-size: 42px;
+      color: #4e342e;
+      letter-spacing: 1px;
+      animation: glowText 2s ease-in-out infinite alternate;
+  ">
+      🎬 Educational Video Editing
+  </h1>
+  <p style="
+      font-size: 18px;
+      color: #5d4037;
+      font-family: 'Open Sans', sans-serif;
+      margin-top: 10px;
+  ">
+      A tribute to women leading change through creativity and technology.
+  </p>
+  <div style="
+      width: 120px;
+      height: 3px;
+      background: linear-gradient(to right, #ef6c00, #ff9800, #ffcc80);
+      margin: 20px auto 0;
+      border-radius: 3px;
+  "></div>
+</div>
+
+  <!-- 🎥 Video Section -->
+     <div class="container mt-5 text-center fade-in">
+<div class="embed-responsive embed-responsive-16by9 rounded shadow" style="max-width: 900px; margin: 0 auto;">
+  <iframe 
+      class="embed-responsive-item"
+      src="https://www.youtube.com/embed/80Y2E2a-tYY"
+      title="Educational Video Editing"
+      frameborder="0"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+      allowfullscreen>
+  </iframe>
+</div>
+
+
+    <h2 class="mt-4" style="color:#6d4c41; font-weight:700;">Behind the Scenes of Educational Storytelling</h2>
+    <p class="text-muted mb-5">
+      A glimpse into how editing transforms learning content into engaging narratives.
+    </p>
+  </div>
+
+  <!-- 📝 Description -->
+  <div class="container fade-in" id="video-description">
+    <div style="background: linear-gradient(135deg, #fff3e0, #ffe0b2, #fff8e1); padding: 30px; border-radius: 20px; box-shadow: 0 4px 20px rgba(0,0,0,0.1); line-height: 1.8;">
+      <h3 style="color:#bf360c; text-align:center; font-family:'Solway', serif;">🎞️ Women Empowerment in Educational Technology</h3>
+
+      <p style="text-align:justify; font-size:16px; color:#4e342e;">
+        This project celebrates the spirit of <strong>women empowerment in educational technology</strong>. 
+        It reflects the growing presence and leadership of women who are redefining how technology can inspire, teach, and transform lives.
+        Through this video, I wanted to showcase not only digital creativity but also the courage and resilience of women who bring empathy and innovation into learning spaces.
+      </p>
+
+      <p style="text-align:justify; font-size:16px; color:#4e342e;">
+        The visuals and narrative highlight how technology, when combined with purpose and inclusion, becomes a bridge to opportunities rather than a barrier. 
+        Each scene symbolizes the journey of women in tech breaking stereotypes, uplifting others, and shaping a more equitable digital future.
+      </p>
+
+      <p style="text-align:justify; font-size:16px; color:#4e342e;">
+        This video serves as both an artistic expression and a message of hope: 
+        that education and technology together can empower women to lead, create, and contribute fearlessly to the evolving world of innovation.
+      </p>
+    </div>
+
+    <!-- 🌸 Poetic Closing Line -->
+    <p style="text-align:center; font-style:italic; color:#6d4c41; margin-top:25px;">
+      “From learning to leading, every woman in technology writes a new chapter of change.” 🍁
+    </p>
+</div>
+
+
+    <!-- 🔙 Back Button -->
+    <div class="text-center mt-5 fade-in">
+      <a href="index.html#portfolio" class="btn btn-lg btn-outline-warning" style="border-radius:30px; padding:10px 25px; color:#e65100; border-color:#e65100;">
+        <i class="fa fa-arrow-left"></i> Back to Portfolio
+      </a>
+    </div>
+  </div>
+
+  <!-- 🍂 Footer -->
+  <div class="footer text-center mt-5 py-3" style="background-color:#fff3e0; color:#5d4037;">
+    <p>&copy; 2025 Maryam Aslam | Educational Video Editing | University of Florida</p>
+  </div>
+
+</body>
+</html>

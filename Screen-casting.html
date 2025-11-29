@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Screen Casting | Maryam Aslam</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+
+  <style>
+    body {
+      background-color: #fff0f7;
+      font-family: 'Open Sans', sans-serif;
+      overflow-x: hidden;
+    }
+
+    /* Animated Gradient Background */
+    @keyframes gradientShift {
+      0% { background-position: 0% 50%; }
+      50% { background-position: 100% 50%; }
+      100% { background-position: 0% 50%; }
+    }
+
+    /* Pink Text Glow */
+    @keyframes glowText {
+      from { text-shadow: 0 0 5px #ff99cc, 0 0 10px #ffb3dd; }
+      to   { text-shadow: 0 0 20px #ff66b3, 0 0 30px #ff4da6; }
+    }
+
+    /* Smooth Fade Animation */
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(20px); }
+      to   { opacity: 1; transform: translateY(0); }
+    }
+
+    .fade-in { animation: fadeIn 1.5s ease-out; }
+
+  </style>
+</head>
+
+<body>
+
+<!-- 🌸 Banner Section -->
+<div style="
+    background: linear-gradient(120deg, #ffb3d9, #ffe6f3, #ff99cc, #ffb3d9);
+    background-size: 200% 200%;
+    animation: gradientShift 10s ease infinite;
+    padding: 60px 20px;
+    text-align: center;
+    border-radius: 0 0 60px 60px;
+    box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+" class="fade-in">
+  <h1 style="
+      font-family: 'Solway', serif;
+      font-weight: 700;
+      font-size: 42px;
+      color: #b30059;
+      letter-spacing: 1px;
+      animation: glowText 2s ease-in-out infinite alternate;
+  ">
+      🎥 Screen Casting
+  </h1>
+  <p style="
+      font-size: 18px;
+      color: #660033;
+      font-family: 'Open Sans', sans-serif;
+      margin-top: 10px;
+  ">
+      Creating motion-based learning content using PowerPoint and screencast narration.
+  </p>
+  <div style="
+      width: 120px;
+      height: 3px;
+      background: linear-gradient(to right, #ff66b3, #ff99cc, #ffb3d9);
+      margin: 20px auto 0;
+      border-radius: 3px;
+  "></div>
+</div>
+
+<!-- 🎥 Video Section -->
+<div class="container mt-5 text-center fade-in">
+  <div class="embed-responsive embed-responsive-16by9 rounded shadow" style="max-width: 900px; margin: 0 auto;">
+    <iframe
+      class="embed-responsive-item"
+      src="https://www.youtube.com/embed/pWNkk8ki0cE"
+      title="Screen Casting Project"
+      frameborder="0"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+      allowfullscreen>
+    </iframe>
+  </div>
+
+  <h2 class="mt-4" style="color:#b30059; font-weight:700;">Behind the Scenes of My Screencast</h2>
+  <p class="text-muted mb-5">
+    Demonstrating how motion animation can be created using Microsoft PowerPoint.
+  </p>
+</div>
+
+<!-- 📝 Updated Description Section -->
+<div class="container fade-in" id="animation-description">
+  <div style="background: linear-gradient(135deg, #ffe6f3, #ffb3d9, #ffeef7); padding: 30px; border-radius: 20px; box-shadow: 0 4px 20px rgba(0,0,0,0.1); line-height: 1.8;">
+
+    <h3 style="color:#b30059; text-align:center; font-family:'Solway', serif;">📽️ Motion Animation Using MS PowerPoint</h3>
+
+    <!-- NEW PARAGRAPHS -->
+    <p style="text-align:justify; font-size:16px; color:#660033;">
+      In this project, I focused on demonstrating how motion-based instructional content can be created using simple and accessible tools. My goal was to design an animated learning sequence entirely in <strong>Microsoft PowerPoint</strong> and then record a narrated screencast explaining each step. I approached the project by breaking down the animation into layers, applying motion paths, and timing transitions to show how static objects can be turned into smooth, dynamic visuals suitable for teaching.
+    </p>
+
+    <p style="text-align:justify; font-size:16px; color:#660033;">
+      The final output includes a fully animated PowerPoint sequence and a screencast video that walks viewers through the design workflow. The narration highlights how each animation was created, how objects were layered to produce motion effects, and how these ideas can be used by educators to develop visually engaging learning materials.
+    </p>
+
+    <h4 style="color:#b30059; margin-top:25px;">🎬 What I Created</h4>
+    <p style="text-align:justify; color:#660033;">
+      I produced a complete instructional screencast featuring custom motion graphics created in PowerPoint. This includes object animations, slide-to-slide transitions, synchronized timing, and an explanatory voice-over that guides viewers through the animation process step by step.
+    </p>
+
+    <h4 style="color:#b30059;">✨ What I Learned</h4>
+    <p style="text-align:justify; color:#660033;">
+      Through this project, I strengthened my skills in visual communication, multimedia design, and instructional narration. I learned how to structure animations logically across slides, how to pace explanations for clarity, and how screencasting can transform a design process into an effective learning experience. This project reinforced the value of using accessible tools to create meaningful and engaging educational content.
+    </p>
+
+  </div>
+
+  <p style="text-align:center; font-style:italic; color:#660033; margin-top:25px;">
+    “Every concept becomes clearer when it moves.” 💖
+  </p>
+</div>
+
+<!-- 🔙 Back Button -->
+<div class="text-center mt-5 fade-in">
+  <a href="index.html#portfolio" class="btn btn-lg btn-outline-primary" style="border-radius:30px; padding:10px 25px; color:#b30059; border-color:#b30059;">
+    <i class="fa fa-arrow-left"></i> Back to Portfolio
+  </a>
+</div>
+
+<!-- 🌙 Footer -->
+<div class="footer text-center mt-5 py-3" style="background-color:#ffe6f3; color:#660033;">
+  <p>&copy; 2025 Maryam Aslam | Screen Casting | University of Florida</p>
+</div>
+
+</body>
+</html>

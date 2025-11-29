@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Digital Animation | Maryam Aslam</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+
+  <style>
+    body {
+      background-color: #f3faff;
+      font-family: 'Open Sans', sans-serif;
+      overflow-x: hidden;
+    }
+
+    @keyframes gradientShift {
+      0% { background-position: 0% 50%; }
+      50% { background-position: 100% 50%; }
+      100% { background-position: 0% 50%; }
+    }
+
+    @keyframes glowText {
+      from { text-shadow: 0 0 5px #90caf9, 0 0 10px #bbdefb; }
+      to { text-shadow: 0 0 20px #64b5f6, 0 0 30px #42a5f5; }
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    .fade-in { animation: fadeIn 1.5s ease-out; }
+  </style>
+</head>
+
+<body>
+
+<!-- 🌟 Banner Section -->
+<div style="
+    background: linear-gradient(120deg, #bbdefb, #e3f2fd, #90caf9, #bbdefb);
+    background-size: 200% 200%;
+    animation: gradientShift 10s ease infinite;
+    padding: 60px 20px;
+    text-align: center;
+    border-radius: 0 0 60px 60px;
+    box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+" class="fade-in">
+  <h1 style="
+      font-family: 'Solway', serif;
+      font-weight: 700;
+      font-size: 42px;
+      color: #0d47a1;
+      letter-spacing: 1px;
+      animation: glowText 2s ease-in-out infinite alternate;
+  ">
+      🤖 Digital Animation
+  </h1>
+  <p style="
+      font-size: 18px;
+      color: #1e3a5f;
+      font-family: 'Open Sans', sans-serif;
+      margin-top: 10px;
+  ">
+      Bringing learning to life through creativity, storytelling, and animation.
+  </p>
+  <div style="
+      width: 120px;
+      height: 3px;
+      background: linear-gradient(to right, #64b5f6, #90caf9, #bbdefb);
+      margin: 20px auto 0;
+      border-radius: 3px;
+  "></div>
+</div>
+
+<!-- 🎥 Video Section -->
+<div class="container mt-5 text-center fade-in">
+  <div class="embed-responsive embed-responsive-16by9 rounded shadow" style="max-width: 900px; margin: 0 auto;">
+    <iframe
+      class="embed-responsive-item"
+      src="https://www.youtube.com/embed/abkS9aLpFnQ"
+      title="The Sleepy Robot Learns"
+      frameborder="0"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+      allowfullscreen>
+    </iframe>
+  </div>
+
+  <h2 class="mt-4" style="color:#0d47a1; font-weight:700;">Behind the Scenes of Digital Learning</h2>
+  <p class="text-muted mb-5">
+    Exploring how animation turns simple concepts into engaging educational experiences.
+  </p>
+</div>
+
+<!-- 📝 Description Section -->
+<div class="container fade-in" id="animation-description">
+  <div style="background: linear-gradient(135deg, #e3f2fd, #bbdefb, #e8f4fe); padding: 30px; border-radius: 20px; box-shadow: 0 4px 20px rgba(0,0,0,0.1); line-height: 1.8;">
+
+    <h3 style="color:#0d47a1; text-align:center; font-family:'Solway', serif;">🎞️ The Sleepy Robot Learns</h3>
+
+    <p style="text-align:justify; font-size:16px; color:#1e3a5f;">
+      “The Sleepy Robot Learns” is a digital animation designed to make learning simple concepts—like shapes—engaging, visual, and relatable for young audiences. The animation follows <strong>Robby</strong>, a curious and sleepy little robot who wakes up eager to learn something new. Though shapes appear simple, they symbolically represent a playful and child-friendly version of how machines learn.
+    </p>
+
+    <p style="text-align:justify; font-size:16px; color:#1e3a5f;">
+      This project uses animation as a medium to explain educational ideas while also demonstrating early-level artificial learning. By giving Robby expressive emotions and reactions, the animation blends creativity with cognitive learning, encouraging curiosity and engagement.
+    </p>
+
+    <h4 style="color:#0d47a1; margin-top:25px;">🌟 Development Process</h4>
+    <p style="text-align:justify; color:#1e3a5f;">
+      The animation was created entirely in <strong>Adobe Animate</strong> using vector graphics. Every background, movement, and transition was built from scratch. The project includes three main scenes, each representing a stage in Robby’s learning journey, supported by an AI-generated voice-over synced to match the pacing and mood.
+    </p>
+
+    <h4 style="color:#0d47a1;">🧩 Scene Breakdown</h4>
+    <p style="text-align:justify; color:#1e3a5f;">
+      <strong>Scene 1: The Sleepy Robot Wakes Up</strong> — Robby awakens in a classroom-like environment. Soft lighting, moving clock hands, and floating “Zzz” text establish his sleepy state. With expressive animations, Robby transitions from tired to curious.
+    </p>
+
+    <p style="text-align:justify; color:#1e3a5f;">
+      <strong>Scene 2: Robby Starts Learning Shapes</strong> — Bright shapes enter the frame using motion and scale tweening. Robby observes each shape while expressive elements like a glowing bulb emphasize understanding.
+    </p>
+
+    <p style="text-align:justify; color:#1e3a5f;">
+      <strong>Scene 3: Robby Masters All the Shapes</strong> — Robby joyfully recognizes a square and triangle, celebrating his progress with bouncing animations and confetti-like visual effects.
+    </p>
+
+    <h4 style="color:#0d47a1;">🛠️ Technical Details</h4>
+    <ul style="color:#1e3a5f;">
+      <li>Software Used: <strong>Adobe Animate</strong></li>
+      <li>Vector-based illustrations created from scratch</li>
+      <li>Motion, shape, rotation, scale, and opacity tweening</li>
+      <li>Glow effects for lighting and emphasis</li>
+      <li>AI-generated voice-over and synced audio effects</li>
+      <li>Color palette: blues, yellows, browns, reds for shape distinction</li>
+    </ul>
+
+    <h4 style="color:#0d47a1;">🎓 Educational Purpose</h4>
+    <p style="text-align:justify; color:#1e3a5f;">
+      This animation demonstrates the power of storytelling and design in simplifying concepts like shape recognition and connecting them to foundational ideas of machine learning and observation.
+    </p>
+
+    <h4 style="color:#0d47a1;">✨ Conclusion</h4>
+    <p style="text-align:justify; color:#1e3a5f;">
+      “The Sleepy Robot Learns” is a playful yet meaningful digital learning experience. Through expressive animation, thoughtful design, and narration, it highlights how learning can be joyful, creative, and intelligent.
+    </p>
+
+  </div>
+
+  <p style="text-align:center; font-style:italic; color:#1e3a5f; margin-top:25px;">
+    “Even a sleepy robot can learn something new — imagine what you can do.” 💙
+  </p>
+</div>
+
+<!-- 🔙 Back Button -->
+<div class="text-center mt-5 fade-in">
+  <a href="index.html#portfolio" class="btn btn-lg btn-outline-primary" style="border-radius:30px; padding:10px 25px; color:#0d47a1; border-color:#0d47a1;">
+    <i class="fa fa-arrow-left"></i> Back to Portfolio
+  </a>
+</div>
+
+<!-- 🌙 Footer -->
+<div class="footer text-center mt-5 py-3" style="background-color:#e3f2fd; color:#1e3a5f;">
+  <p>&copy; 2025 Maryam Aslam | Digital Animation | University of Florida</p>
+</div>
+
+</body>
+</html>
